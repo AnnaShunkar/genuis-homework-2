@@ -8,16 +8,21 @@
     --secondary-color-yellow: #ffd02b;
 
 }
+
 body {
     color: var(--primary-color-dark);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 h1 {
     color: var(--main-color);
     font-family: 'Play', serif;
@@ -32,14 +37,17 @@ h2 {
     font-weight: 700;
     font-size: 64px;
 }
+
 /*MAIN*/
 span {
     color: var(--main-color);
 }
+
 .span {
     color: var(--primary-color-dark);
     font-weight: 600;
 }
+
 ul {
     list-style-type: none;
 }
@@ -47,11 +55,14 @@ ul {
 address {
     font-style: normal;
 }
+
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1239px;
     margin: 0 auto;
+    padding: 0 24px;
 }
+
 /*LINK*/
 .link-header {
     color: var(--primary-color-dark);
@@ -120,6 +131,7 @@ address {
     font-size: 22px;
     line-height: 1.7;
 }
+
 /*HEADER*/
 .header-container {
     display: flex;
@@ -128,66 +140,94 @@ address {
     height: 106px;
     backdrop-filter: blur(10px);
 }
+
 .header-nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     gap: 40px;
 }
+
 .header-menu {
     display: flex;
     gap: 56px;
     flex-grow: 1;
     justify-content: center;
 }
+
 .header-media {
     display: flex;
     flex-grow: 1;
     gap: 32px;
     justify-content: center;
 }
+
 .header-socials {
     fill: var(--primary-color-dark);
 }
+
 .header-socials:hover {
     fill: var(--main-color);
 }
+
 /*hero section*/
-.main-container {
+.hero-section {
     background-image: url('../images/main-bcgr.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-   
+    height: 583px;
 }
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-content {
+    width: 529px;
+    height: 408px;
+}
+
 /*change stction*/
 .change-container {
     display: flex;
     height: 695px;
     gap: 60px;
 }
+
 .change-images {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
+
 .change-image-first,
 .change-image-second {
     border-radius: 50%;
     width: 335px;
     height: 328px;
 }
+
 .change-content {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
 }
+
 /*benefits section*/
 .benefits-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 48px;
     padding-bottom: 90px;
 }
+
 .benefits-title {
     text-align: center;
 }
+
 .benefits-card {
     width: 316px;
     height: 181px;
@@ -195,62 +235,80 @@ address {
     text-align: center;
     border: 1px solid blue;
 }
+
 .benefits-list {
     display: flex;
     justify-content: center;
     gap: 56px;
 }
+
 /*procedures container*/
 .procedures-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     align-items: center;
     padding-bottom: 90px;
 }
+
 .procedures-title {
     text-align: center;
 }
+
 .procedures-list {
     display: flex;
     justify-content: center;
     gap: 32px;
 }
+
 /*find section*/
 .find-map {
     border-radius: 10%;
 }
+
 .find-title {
     text-align: center;
 }
+
 .find-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     padding-bottom: 90px;
 }
+
 /*FOOTER*/
-footer{
+footer {
     background-color: var(--secondary-color-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: 278px;
 }
+
 .footer-container {
     display: flex;
     gap: 40px;
     padding-top: 56px;
 }
+
 .footer-nav,
-.footer-address{
-display: flex;
-flex-basis: 50%;
-gap: 20px;
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
 }
+
 .footer-logo,
 .footer-menu {
     flex-grow: 1;
 }
+
 .address-list,
 .address-info {
     flex-grow: 1;
 }
+
 .address-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -258,17 +316,22 @@ gap: 20px;
     color: var(--primary-color-light);
     text-decoration: none;
 }
+
 .address-link:hover {
     color: var(--main-color);
 }
+
 .address-socials-icons {
-    display: block;
+    display: flex;
     fill: var(--primary-color-light);
+    flex-direction: row;
+    margin-top: 30px;
 }
-.address-socials-icons:hover {
-    display: block;
+
+.address-socials-icon:hover {
     fill: var(--main-color);
 }
+
 .address-copyright {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
