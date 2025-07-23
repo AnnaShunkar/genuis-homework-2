@@ -254,9 +254,9 @@ address {
 /*procedures container*/
 .procedures-container {
     display: flex;
-    flex-direction: column;
-    gap: 48px;
+    gap: 20px;
     align-items: center;
+    justify-content: center;
     padding-bottom: 90px;
 }
 
@@ -269,7 +269,31 @@ address {
     justify-content: center;
     gap: 32px;
 }
+.carousel-button{
+border-radius: 50%;
+width: 44px;
+height: 44px;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+color: var(--primary-color-dark);
+background-color: var(--primary-color-light);
+border: 1px solid var(--primary-color-dark);
+}
+.arrow-button {
+    fill: var(--primary-color-dark);
+}
 
+.carousel-button:hover{
+    fill: var(--primary-color-light);
+    background-color: var(--main-color);
+    border: 1px solid var(--primary-color-light)
+}
+.carousel-button:hover .arrow-button{
+    fill: var(--primary-color-light);
+}
 /*find section*/
 .find-map {
     border-radius: 10%;
@@ -293,8 +317,22 @@ footer {
     font-weight: 400;
     font-size: 16px;
     height: 278px;
+    position: relative;
 }
-
+.footer {
+    background-image: url('../images/footer-background.png');
+    background-color: var(--primary-color-dark);
+}
+.footer::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/footer-bottles.png');
+    width: 250px;
+    height: 150px;
+    background-size: 100%;
+    right: 0;
+    bottom: 0;
+}
 .footer-container {
     display: flex;
     gap: 40px;
