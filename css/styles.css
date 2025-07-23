@@ -29,7 +29,8 @@ h1 {
     font-weight: 700;
     font-size: 140px;
     width: 529px;
-    height: 228px;
+    line-height: 81%;
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -58,7 +59,7 @@ address {
 
 .container {
     width: 100%;
-    max-width: 1239px;
+    max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -96,18 +97,20 @@ address {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    width: 219px;
-    height: 53px;
     border-radius: 32px;
+    height: 53px;
+    width: 219px;
     border: 2px;
     color: var(--primary-color-light);
     background-color: var(--main-color);
+    padding: 16px 32px;
 }
 
 .button:hover {
     border: 2px solid var(--main-color);
     color: var(--primary-color-dark);
     background-color: transparent;
+    padding: 16px 32px;
 }
 
 /*PARAGRAPH*/
@@ -115,6 +118,7 @@ address {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    margin-bottom: 16px;
 }
 
 .second-paragraph {
@@ -172,27 +176,22 @@ address {
 
 /*hero section*/
 .hero-section {
-    background-image: url('../images/main-bcgr.jpg');
+    background-image: url('../images/bkg-image-main.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 583px;
+    padding: 130px 0 130px 0;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.hero-content {
-    width: 529px;
-    height: 408px;
+    margin-left: 106px;
 }
 
 /*change stction*/
 .change-container {
     display: flex;
-    height: 695px;
     gap: 60px;
 }
 
@@ -207,6 +206,9 @@ address {
     width: 335px;
     height: 328px;
 }
+.change-image-second {
+    margin-left: 172px;
+}
 
 .change-content {
     display: flex;
@@ -215,6 +217,9 @@ address {
 }
 
 /*benefits section*/
+.benefits-section {
+    background-image: url('../images/benefits-background.png');
+}
 .benefits-container {
     display: flex;
     flex-direction: column;
@@ -234,6 +239,8 @@ address {
     border-radius: 32px;
     text-align: center;
     border: 1px solid blue;
+    gap: 8px;
+    background-color: var(--primary-color-light);
 }
 
 .benefits-list {
@@ -241,7 +248,9 @@ address {
     justify-content: center;
     gap: 56px;
 }
-
+.benefits-icons {
+    fill: var(--main-color);
+}
 /*procedures container*/
 .procedures-container {
     display: flex;
@@ -290,6 +299,8 @@ footer {
     display: flex;
     gap: 40px;
     padding-top: 56px;
+    justify-content: space-between;
+        align-items: flex-start;
 }
 
 .footer-nav,
@@ -326,6 +337,7 @@ footer {
     fill: var(--primary-color-light);
     flex-direction: row;
     margin-top: 30px;
+    gap: 24px;
 }
 
 .address-socials-icon:hover {
